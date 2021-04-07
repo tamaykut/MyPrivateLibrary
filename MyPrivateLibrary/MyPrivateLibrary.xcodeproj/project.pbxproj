@@ -6,34 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		A2BEAAB7261D3B5B00894399 /* Aggregate */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A2BEAAB8261D3B5B00894399 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
-			buildPhases = (
-				A2BEAAC0261D3B8F00894399 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Aggregate;
-			productName = Aggregate;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		A2BEAAA3261D38C800894399 /* MyPrivateLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BEAAA1261D38C800894399 /* MyPrivateLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2BEAAAB261D390900894399 /* TFLiteLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BEAAAA261D390900894399 /* TFLiteLogger.swift */; };
+		A2BEAAEB261D5E5900894399 /* MyPrivateLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BEAAE9261D5E5900894399 /* MyPrivateLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2BEAAF3261D5EA000894399 /* PrivatePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BEAAF2261D5EA000894399 /* PrivatePrinter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A2BEAA9E261D38C800894399 /* MyPrivateLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyPrivateLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2BEAAA1261D38C800894399 /* MyPrivateLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPrivateLibrary.h; sourceTree = "<group>"; };
-		A2BEAAA2261D38C800894399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2BEAAAA261D390900894399 /* TFLiteLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteLogger.swift; sourceTree = "<group>"; };
+		A2BEAAE6261D5E5900894399 /* MyPrivateLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyPrivateLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BEAAE9261D5E5900894399 /* MyPrivateLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPrivateLibrary.h; sourceTree = "<group>"; };
+		A2BEAAEA261D5E5900894399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BEAAF2261D5EA000894399 /* PrivatePrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePrinter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A2BEAA9B261D38C800894399 /* Frameworks */ = {
+		A2BEAAE3261D5E5900894399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,28 +29,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A2BEAA94261D38C800894399 = {
+		A2BEAADC261D5E5900894399 = {
 			isa = PBXGroup;
 			children = (
-				A2BEAAA0261D38C800894399 /* MyPrivateLibrary */,
-				A2BEAA9F261D38C800894399 /* Products */,
+				A2BEAAE8261D5E5900894399 /* MyPrivateLibrary */,
+				A2BEAAE7261D5E5900894399 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A2BEAA9F261D38C800894399 /* Products */ = {
+		A2BEAAE7261D5E5900894399 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2BEAA9E261D38C800894399 /* MyPrivateLibrary.framework */,
+				A2BEAAE6261D5E5900894399 /* MyPrivateLibrary.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2BEAAA0261D38C800894399 /* MyPrivateLibrary */ = {
+		A2BEAAE8261D5E5900894399 /* MyPrivateLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A2BEAAAA261D390900894399 /* TFLiteLogger.swift */,
-				A2BEAAA1261D38C800894399 /* MyPrivateLibrary.h */,
-				A2BEAAA2261D38C800894399 /* Info.plist */,
+				A2BEAAE9261D5E5900894399 /* MyPrivateLibrary.h */,
+				A2BEAAEA261D5E5900894399 /* Info.plist */,
+				A2BEAAF2261D5EA000894399 /* PrivatePrinter.swift */,
 			);
 			path = MyPrivateLibrary;
 			sourceTree = "<group>";
@@ -72,25 +58,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A2BEAA99261D38C800894399 /* Headers */ = {
+		A2BEAAE1261D5E5900894399 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BEAAA3261D38C800894399 /* MyPrivateLibrary.h in Headers */,
+				A2BEAAEB261D5E5900894399 /* MyPrivateLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A2BEAA9D261D38C800894399 /* MyPrivateLibrary */ = {
+		A2BEAAE5261D5E5900894399 /* MyPrivateLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2BEAAA6261D38C800894399 /* Build configuration list for PBXNativeTarget "MyPrivateLibrary" */;
+			buildConfigurationList = A2BEAAEE261D5E5900894399 /* Build configuration list for PBXNativeTarget "MyPrivateLibrary" */;
 			buildPhases = (
-				A2BEAA99261D38C800894399 /* Headers */,
-				A2BEAA9A261D38C800894399 /* Sources */,
-				A2BEAA9B261D38C800894399 /* Frameworks */,
-				A2BEAA9C261D38C800894399 /* Resources */,
+				A2BEAAE1261D5E5900894399 /* Headers */,
+				A2BEAAE2261D5E5900894399 /* Sources */,
+				A2BEAAE3261D5E5900894399 /* Frameworks */,
+				A2BEAAE4261D5E5900894399 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -98,27 +84,24 @@
 			);
 			name = MyPrivateLibrary;
 			productName = MyPrivateLibrary;
-			productReference = A2BEAA9E261D38C800894399 /* MyPrivateLibrary.framework */;
+			productReference = A2BEAAE6261D5E5900894399 /* MyPrivateLibrary.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A2BEAA95261D38C800894399 /* Project object */ = {
+		A2BEAADD261D5E5900894399 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					A2BEAA9D261D38C800894399 = {
+					A2BEAAE5261D5E5900894399 = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
 					};
-					A2BEAAB7261D3B5B00894399 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 				};
 			};
-			buildConfigurationList = A2BEAA98261D38C800894399 /* Build configuration list for PBXProject "MyPrivateLibrary" */;
+			buildConfigurationList = A2BEAAE0261D5E5900894399 /* Build configuration list for PBXProject "MyPrivateLibrary" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,19 +109,18 @@
 				en,
 				Base,
 			);
-			mainGroup = A2BEAA94261D38C800894399;
-			productRefGroup = A2BEAA9F261D38C800894399 /* Products */;
+			mainGroup = A2BEAADC261D5E5900894399;
+			productRefGroup = A2BEAAE7261D5E5900894399 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2BEAA9D261D38C800894399 /* MyPrivateLibrary */,
-				A2BEAAB7261D3B5B00894399 /* Aggregate */,
+				A2BEAAE5261D5E5900894399 /* MyPrivateLibrary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A2BEAA9C261D38C800894399 /* Resources */ = {
+		A2BEAAE4261D5E5900894399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -147,39 +129,19 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A2BEAAC0261D3B8F00894399 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Make sure the output directory exists\n\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\n\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/MyPrivateLibrary.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\n\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/MyPrivateLibrary.framework/Modules/MyPrivateLibrary.swiftmodule/.\" \"${UNIVERSAL_OUTPUTFOLDER}/MyPrivateLibrary.framework/Modules/MyPrivateLibrary.swiftmodule\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\n\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/MyPrivateLibrary.framework/MyPrivateLibrary\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/MyPrivateLibrary.framework/MyPrivateLibrary\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/MyPrivateLibrary.framework/MyPrivateLibrary\"\n\n\n# Step 5. Convenience step to open the project's directory in Finder\n\nopen \"${UNIVERSAL_OUTPUTFOLDER}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A2BEAA9A261D38C800894399 /* Sources */ = {
+		A2BEAAE2261D5E5900894399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BEAAAB261D390900894399 /* TFLiteLogger.swift in Sources */,
+				A2BEAAF3261D5EA000894399 /* PrivatePrinter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A2BEAAA4261D38C800894399 /* Debug */ = {
+		A2BEAAEC261D5E5900894399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		A2BEAAA5261D38C800894399 /* Release */ = {
+		A2BEAAED261D5E5900894399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,7 +263,7 @@
 			};
 			name = Release;
 		};
-		A2BEAAA7261D38C800894399 /* Debug */ = {
+		A2BEAAEF261D5E5900894399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -327,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		A2BEAAA8261D38C800894399 /* Release */ = {
+		A2BEAAF0261D5E5900894399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -352,55 +314,28 @@
 			};
 			name = Release;
 		};
-		A2BEAAB9261D3B5B00894399 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DZJ3LMSN5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A2BEAABA261D3B5B00894399 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DZJ3LMSN5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2BEAA98261D38C800894399 /* Build configuration list for PBXProject "MyPrivateLibrary" */ = {
+		A2BEAAE0261D5E5900894399 /* Build configuration list for PBXProject "MyPrivateLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2BEAAA4261D38C800894399 /* Debug */,
-				A2BEAAA5261D38C800894399 /* Release */,
+				A2BEAAEC261D5E5900894399 /* Debug */,
+				A2BEAAED261D5E5900894399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2BEAAA6261D38C800894399 /* Build configuration list for PBXNativeTarget "MyPrivateLibrary" */ = {
+		A2BEAAEE261D5E5900894399 /* Build configuration list for PBXNativeTarget "MyPrivateLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2BEAAA7261D38C800894399 /* Debug */,
-				A2BEAAA8261D38C800894399 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2BEAAB8261D3B5B00894399 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A2BEAAB9261D3B5B00894399 /* Debug */,
-				A2BEAABA261D3B5B00894399 /* Release */,
+				A2BEAAEF261D5E5900894399 /* Debug */,
+				A2BEAAF0261D5E5900894399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A2BEAA95261D38C800894399 /* Project object */;
+	rootObject = A2BEAADD261D5E5900894399 /* Project object */;
 }

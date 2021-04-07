@@ -6,16 +6,30 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A2BEAAB7261D3B5B00894399 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A2BEAAB8261D3B5B00894399 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				A2BEAAC0261D3B8F00894399 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A2BEAAA3261D38C800894399 /* MyPrivateLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BEAAA1261D38C800894399 /* MyPrivateLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2BEAAAB261D390900894399 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BEAAAA261D390900894399 /* File.swift */; };
+		A2BEAAAB261D390900894399 /* TFLiteLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BEAAAA261D390900894399 /* TFLiteLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2BEAA9E261D38C800894399 /* MyPrivateLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyPrivateLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BEAAA1261D38C800894399 /* MyPrivateLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPrivateLibrary.h; sourceTree = "<group>"; };
 		A2BEAAA2261D38C800894399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2BEAAAA261D390900894399 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A2BEAAAA261D390900894399 /* TFLiteLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +62,7 @@
 		A2BEAAA0261D38C800894399 /* MyPrivateLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A2BEAAAA261D390900894399 /* File.swift */,
+				A2BEAAAA261D390900894399 /* TFLiteLogger.swift */,
 				A2BEAAA1261D38C800894399 /* MyPrivateLibrary.h */,
 				A2BEAAA2261D38C800894399 /* Info.plist */,
 			);
@@ -99,6 +113,9 @@
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
 					};
+					A2BEAAB7261D3B5B00894399 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = A2BEAA98261D38C800894399 /* Build configuration list for PBXProject "MyPrivateLibrary" */;
@@ -115,6 +132,7 @@
 			projectRoot = "";
 			targets = (
 				A2BEAA9D261D38C800894399 /* MyPrivateLibrary */,
+				A2BEAAB7261D3B5B00894399 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -129,12 +147,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A2BEAAC0261D3B8F00894399 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Make sure the output directory exists\n\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\n\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/MyPrivateLibrary.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\n\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/MyPrivateLibrary.framework/Modules/MyPrivateLibrary.swiftmodule/.\" \"${UNIVERSAL_OUTPUTFOLDER}/MyPrivateLibrary.framework/Modules/MyPrivateLibrary.swiftmodule\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\n\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/MyPrivateLibrary.framework/MyPrivateLibrary\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/MyPrivateLibrary.framework/MyPrivateLibrary\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/MyPrivateLibrary.framework/MyPrivateLibrary\"\n\n\n# Step 5. Convenience step to open the project's directory in Finder\n\nopen \"${UNIVERSAL_OUTPUTFOLDER}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2BEAA9A261D38C800894399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BEAAAB261D390900894399 /* File.swift in Sources */,
+				A2BEAAAB261D390900894399 /* TFLiteLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +352,24 @@
 			};
 			name = Release;
 		};
+		A2BEAAB9261D3B5B00894399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZJ3LMSN5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A2BEAABA261D3B5B00894399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DZJ3LMSN5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +387,15 @@
 			buildConfigurations = (
 				A2BEAAA7261D38C800894399 /* Debug */,
 				A2BEAAA8261D38C800894399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2BEAAB8261D3B5B00894399 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2BEAAB9261D3B5B00894399 /* Debug */,
+				A2BEAABA261D3B5B00894399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

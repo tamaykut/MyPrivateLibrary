@@ -8,7 +8,7 @@
 import Foundation
 //import TensorFlowLite
 
-public class TFLiteLogger {
+public class MyPrivateLibrary {
     public init() {
         debugPrint("Tf lite initialized")
     }

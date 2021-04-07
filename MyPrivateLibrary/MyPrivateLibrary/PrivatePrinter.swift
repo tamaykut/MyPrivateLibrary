@@ -8,7 +8,7 @@
 import Foundation
 
 public class PrivatePrinter {
-    func print() {
+    public func print() {
         debugPrint("Worked")
     }
 }

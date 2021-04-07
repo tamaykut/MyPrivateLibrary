@@ -8,7 +8,7 @@
 import Foundation
 
 public struct PrivatePrinter {
-    public func print() {
+    public func init() {
         debugPrint("Worked")
     }
 }

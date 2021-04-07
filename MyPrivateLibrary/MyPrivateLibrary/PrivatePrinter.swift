@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TensorFlowLite
 
 public struct PrivatePrinter {
     public init() {
